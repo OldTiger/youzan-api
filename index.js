@@ -1,21 +1,5 @@
-const SDK    = require('youzan-sdk');
-const CONFIG = require('./config');
+var API = require('./lib/common');
 
-const sdk = SDK({
-	key   : CONFIG.APP_ID,
-	secret: CONFIG.APP_SECERT
-});
+API.mixin(require('./lib/api_coupons'));
 
-/*sdk.get('kdt.items.onsale.get', {
-	page_size: 20
-}).then(function (data) {
-	console.log(JSON.stringify(data));
-});*/
-sdk.get('kdt.ump.coupons.unfinished.all',{
-	fields: 'group_id'
-}).then(function(data) {
-	// make some thing
-	console.log(JSON.stringify(data));
-},function(err){
-	console.log(err);
-});
+module.exports = API;

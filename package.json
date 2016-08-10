@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=./test/support/jasmine.json"
+    "test": "./node_modules/mocha/bin/mocha JASMINE_CONFIG_PATH=./test/support/jasmine.json"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,6 @@
     "youzan-sdk": "0.0.8"
   },
   "devDependencies": {
-    "jasmine": "^2.4.1"
+    "mocha": "^3.0.2"
   }
 }
