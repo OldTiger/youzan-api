@@ -1,10 +1,10 @@
 {
-  "name": "youzan",
+  "name": "youzan-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/jasmine/bin/jasmine.js"
+    "test": "./node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=./test/support/jasmine.json"
   },
   "keywords": [],
   "author": "",
