@@ -1,7 +1,7 @@
 {
   "name": "youzan-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "有赞SDK二次封装",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=./test/support/jasmine.json",
